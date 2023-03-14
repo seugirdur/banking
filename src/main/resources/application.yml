@@ -1,0 +1,22 @@
+
+spring:
+  application:
+    name: banking
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  jmx:
+    enabled: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/dbjava?allowPublicKeyRetrieval=true&sslModel=DISABLED
+    username: root
+  output:
+    ansi:
+      enabled: ALWAYS
+
+server:
+  port: 8080
